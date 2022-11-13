@@ -10,7 +10,7 @@ function getData(){
 }
 
 function writeData($r){
-    $file = fopen('output.csv', 'w');
+    $file = fopen('laptop.csv', 'w');
     fputcsv($file, array("Title", "Price", "Brand"));
 
     foreach($r['products'] as $product){
@@ -18,7 +18,6 @@ function writeData($r){
     }
     fclose($file);
 }
-
 getData();
 
 

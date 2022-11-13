@@ -20,6 +20,7 @@ function writeData($r){
 }
 
 getData();
+echo "finished";
 
 
 
